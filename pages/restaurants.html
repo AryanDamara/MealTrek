@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all restaurants on MealTrek - Find your favorite food from thousands of restaurants">
+    <title>Restaurants - MealTrek | Browse & Order</title>
+    <link rel="stylesheet" href="../assets/css/restaurants.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <h1>🍽️ MealTrek</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html" class="active">Restaurants</a></li>
+                <li><a href="last-minute-deal.html">Last Minute Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="restaurants-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Discover Your Favorite Restaurants</h1>
+            <p class="hero-subtitle">Browse thousands of restaurants and find the perfect meal for you</p>
+            
+            <!-- SEARCH BAR -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="location-search" 
+                    class="search-input" 
+                    placeholder="📍 Enter your location"
+                >
+                <input 
+                    type="text" 
+                    id="restaurant-search" 
+                    class="search-input" 
+                    placeholder="🔍 Search restaurant name or cuisine"
+                >
+                <button class="btn-search">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER & SORT SECTION -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <!-- LEFT SIDEBAR - FILTERS -->
+                <div class="filter-sidebar">
+                    <h3 class="filter-title">🔍 Filters</h3>
+
+                    <!-- Rating Filter -->
+                    <div class="filter-group">
+                        <h4>Rating</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="rating-filter" value="4.5">
+                                <span>⭐ 4.5 & above</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="rating-filter" value="4">
+                                <span>⭐ 4.0 & above</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="rating-filter" value="3.5">
+                                <span>⭐ 3.5 & above</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="rating-filter" value="3">
+                                <span>⭐ 3.0 & above</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Cuisine Filter -->
+                    <div class="filter-group">
+                        <h4>Cuisine Type</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="cuisine-filter" value="pizza">
+                                <span>🍕 Pizza</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="cuisine-filter" value="burger">
+                                <span>🍔 Burgers</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="cuisine-filter" value="biryani">
+                                <span>🍚 Biryani</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="cuisine-filter" value="chinese">
+                                <span>🥢 Chinese</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="cuisine-filter" value="south-indian">
+                                <span>🥪 South Indian</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="cuisine-filter" value="dessert">
+                                <span>🍰 Desserts</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Time Filter -->
+                    <div class="filter-group">
+                        <h4>Delivery Time</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="time-filter" value="20">
+                                <span>🕐 20 mins or less</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="time-filter" value="30">
+                                <span>🕐 20-30 mins</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="time-filter" value="40">
+                                <span>🕐 30-40 mins</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="time-filter" value="50">
+                                <span>🕐 40+ mins</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Range Filter -->
+                    <div class="filter-group">
+                        <h4>Price Range (For 2)</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="price-filter" value="250">
+                                <span>💰 Below ₹250</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="price-filter" value="500">
+                                <span>💰 ₹250 - ₹500</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="price-filter" value="750">
+                                <span>💰 ₹500 - ₹750</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="price-filter" value="1000">
+                                <span>💰 ₹750+</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Special Features -->
+                    <div class="filter-group">
+                        <h4>Special Features</h4>
+                        <div class="filter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="feature-filter" value="free-delivery">
+                                <span>🚚 Free Delivery</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="feature-filter" value="has-offers">
+                                <span>🎁 Special Offers</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="feature-filter" value="popular">
+                                <span>🔥 Popular</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" class="feature-filter" value="trending">
+                                <span>📈 Trending</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn-clear-filters">Clear Filters</button>
+                </div>
+
+                <!-- RIGHT CONTENT - RESTAURANTS -->
+                <div class="restaurants-content">
+                    <!-- SORT OPTIONS -->
+                    <div class="sort-section">
+                        <label for="sort-by">Sort By:</label>
+                        <select id="sort-by" class="sort-select">
+                            <option value="relevance">Relevance</option>
+                            <option value="rating">Highest Rating</option>
+                            <option value="delivery-time">Fastest Delivery</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest</option>
+                        </select>
+                    </div>
+
+                    <!-- RESTAURANTS GRID -->
+                    <div class="restaurants-grid" id="restaurantsGrid">
+                        <!-- Restaurant Card 1 -->
+                        <a href="restaurants/restaurant1.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto1.jpg" alt="Spice Paradise">
+                                <div class="restaurant-badges">
+                                    <span class="badge popular">Popular</span>
+                                    <span class="badge offer">20% Off</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Spice Paradise</h3>
+                                <p class="restaurant-cuisine">North Indian, Chinese, Mughlai</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.5</span>
+                                    <span class="reviews">(1,234 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 30-40 mins</span>
+                                    <span class="price-range">₹300 for two</span>
+                                </div>
+                                <p class="restaurant-offer">20% off on first order | Free delivery on orders above ₹500</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 2 -->
+                        <a href="restaurants/restaurant2.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto2.jpg" alt="Pizza Hub">
+                                <div class="restaurant-badges">
+                                    <span class="badge trending">Trending</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Pizza Hub</h3>
+                                <p class="restaurant-cuisine">Italian, Pizza, Pasta, Continental</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.3</span>
+                                    <span class="reviews">(987 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 25-35 mins</span>
+                                    <span class="price-range">₹400 for two</span>
+                                </div>
+                                <p class="restaurant-offer">Free delivery on orders above ₹500</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 3 -->
+                        <a href="restaurants/restaurant3.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto3.jpg" alt="Burger King">
+                                <div class="restaurant-badges">
+                                    <span class="badge fast">Fast Food</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Burger King</h3>
+                                <p class="restaurant-cuisine">American, Burgers, Fast Food, Fries</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.2</span>
+                                    <span class="reviews">(756 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 20-30 mins</span>
+                                    <span class="price-range">₹350 for two</span>
+                                </div>
+                                <p class="restaurant-offer">Buy 1 Get 1 on Burgers</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 4 -->
+                        <a href="restaurants/restaurant4.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto4.jpg" alt="Biryani House">
+                                <div class="restaurant-badges">
+                                    <span class="badge top-rated">Top Rated</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Biryani House</h3>
+                                <p class="restaurant-cuisine">Biryani, Mughlai, Hyderabadi Cuisine</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.6</span>
+                                    <span class="reviews">(1,567 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 35-45 mins</span>
+                                    <span class="price-range">₹500 for two</span>
+                                </div>
+                                <p class="restaurant-offer">15% off on orders above ₹800</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 5 -->
+                        <a href="restaurants/restaurant5.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto5.jpg" alt="South Indian Delight">
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">South Indian Delight</h3>
+                                <p class="restaurant-cuisine">South Indian, Dosa, Idly, Sambar</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.4</span>
+                                    <span class="reviews">(890 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 25-35 mins</span>
+                                    <span class="price-range">₹250 for two</span>
+                                </div>
+                                <p class="restaurant-offer">25% off on orders above ₹300</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 6 -->
+                        <a href="restaurants/restaurant6.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto6.jpg" alt="Dragon's Wok">
+                                <div class="restaurant-badges">
+                                    <span class="badge offer">30% Off</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Dragon's Wok</h3>
+                                <p class="restaurant-cuisine">Chinese, Asian, Noodles</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.1</span>
+                                    <span class="reviews">(645 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 30-40 mins</span>
+                                    <span class="price-range">₹280 for two</span>
+                                </div>
+                                <p class="restaurant-offer">30% off on orders above ₹400</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 7 -->
+                        <a href="restaurants/restaurant7.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto7.jpg" alt="Sweet Treats">
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Sweet Treats</h3>
+                                <p class="restaurant-cuisine">Desserts, Bakery, Cafe</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.7</span>
+                                    <span class="reviews">(512 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 15-25 mins</span>
+                                    <span class="price-range">₹200 for two</span>
+                                </div>
+                                <p class="restaurant-offer">Free delivery on all orders</p>
+                            </div>
+                        </a>
+
+                        <!-- Restaurant Card 8 -->
+                        <a href="restaurants/restaurant8.html" class="restaurant-card">
+                            <div class="restaurant-image">
+                                <img src="../assets/images/resto8.jpg" alt="Café Express">
+                                <div class="restaurant-badges">
+                                    <span class="badge popular">Popular</span>
+                                </div>
+                            </div>
+                            <div class="restaurant-info">
+                                <h3 class="restaurant-name">Café Express</h3>
+                                <p class="restaurant-cuisine">Cafe, Beverages, Snacks</p>
+                                <div class="restaurant-rating">
+                                    <span class="rating">⭐ 4.5</span>
+                                    <span class="reviews">(723 reviews)</span>
+                                </div>
+                                <div class="restaurant-details">
+                                    <span class="delivery-time">🕐 20-30 mins</span>
+                                    <span class="price-range">₹150 for two</span>
+                                </div>
+                                <p class="restaurant-offer">Buy 1 Get 1 on Beverages</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- PAGINATION / LOAD MORE -->
+                    <div class="pagination">
+                        <button class="btn-load-more">Load More Restaurants</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NO RESULTS MESSAGE -->
+    <section class="no-results" id="noResults" style="display: none;">
+        <div class="container">
+            <div class="no-results-content">
+                <div class="no-results-icon">🔍</div>
+                <h2>No Restaurants Found</h2>
+                <p>Try adjusting your filters or search terms to find restaurants</p>
+                <button class="btn-primary">Clear Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Check out our Last Minute Deals for amazing discounts</p>
+                <a href="last-minute-deal.html" class="btn-primary">View Deals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MealTrek</h3>
+                    <p>Your trusted food delivery partner. Fresh, fast, and delicious meals at your fingertips.</p>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="last-minute-deal.html">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MealTrek. All rights reserved. | Made with ❤️ by Aryan Damara</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/restaurants.js"></script>
+</body>
+</html>

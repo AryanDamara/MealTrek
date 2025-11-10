@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MealTrek - Get in touch with our support team for any questions or concerns">
+    <title>Contact MealTrek - Get in Touch</title>
+    <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <h1>🍽️ MealTrek</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="last-minute-deal.html">Last Minute Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="navbar-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="contact-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">Get in Touch</h1>
+            <p class="hero-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTACT SECTION -->
+    <section class="contact-main section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- CONTACT INFORMATION -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    <p class="section-intro">Have a question or feedback? Reach out to us through any of these channels. We're here to help!</p>
+
+                    <!-- Contact Info Cards -->
+                    <div class="contact-info-cards">
+                        <!-- Phone -->
+                        <div class="info-card">
+                            <div class="info-icon">📱</div>
+                            <h3>Phone</h3>
+                            <p>+91 9876543210</p>
+                            <p class="info-detail">Available 24/7 for support</p>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p>support@mealtrek.com</p>
+                            <p class="info-detail">We reply within 24 hours</p>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Office Location</h3>
+                            <p>123 Food Street, Tech Park</p>
+                            <p class="info-detail">Mumbai, Maharashtra 400001</p>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="info-card">
+                            <div class="info-icon">🕐</div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p class="info-detail">Saturday & Sunday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Section -->
+                    <div class="social-section">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon facebook" title="Facebook">
+                                <span>📘 Facebook</span>
+                            </a>
+                            <a href="#" class="social-icon instagram" title="Instagram">
+                                <span>📷 Instagram</span>
+                            </a>
+                            <a href="#" class="social-icon twitter" title="Twitter">
+                                <span>🐦 Twitter</span>
+                            </a>
+                            <a href="#" class="social-icon linkedin" title="LinkedIn">
+                                <span>💼 LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-control" 
+                                placeholder="Your Full Name" 
+                                required
+                            >
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                placeholder="your.email@example.com" 
+                                required
+                            >
+                        </div>
+
+                        <!-- Phone Field -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-control" 
+                                placeholder="+91 XXXXX XXXXX"
+                            >
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">-- Select a Subject --</option>
+                                <option value="general-inquiry">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="bug-report">Report an Issue</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-control textarea" 
+                                placeholder="Please share your message, feedback, or inquiry here..."
+                                rows="6"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <!-- Checkbox for Newsletter -->
+                        <div class="form-group checkbox-group">
+                            <input 
+                                type="checkbox" 
+                                id="newsletter" 
+                                name="newsletter"
+                            >
+                            <label for="newsletter">Subscribe to our newsletter for updates and offers</label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-submit">Send Message</button>
+                        <p class="form-note">* Required fields</p>
+                    </form>
+
+                    <!-- Success Message (Hidden by default) -->
+                    <div class="success-message" id="successMessage" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq section">
+        <div class="container">
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How long does delivery take?</h3>
+                    <p>
+                        Average delivery time is 30-40 minutes depending on location and restaurant busy hours. 
+                        You'll receive real-time updates on your delivery status.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>
+                        We accept credit/debit cards, digital wallets (Google Pay, Apple Pay), UPI, 
+                        and cash on delivery. All payments are 100% secure and encrypted.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I cancel my order?</h3>
+                    <p>
+                        Yes, you can cancel your order within 5 minutes of placing it. After that, 
+                        the order goes to the restaurant and cannot be cancelled.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if my order arrives late?</h3>
+                    <p>
+                        If your order arrives late beyond the promised delivery time, you'll receive 
+                        a refund of the delivery charges automatically.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I report an issue with my order?</h3>
+                    <p>
+                        You can report issues through the "Help" section in your account or contact 
+                        our support team using any of the contact methods on this page.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer refunds?</h3>
+                    <p>
+                        Yes, we offer refunds for cancelled orders, late deliveries, or if your order 
+                        doesn't meet our quality standards. Refunds are processed within 3-5 business days.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUPPORT OPTIONS SECTION -->
+    <section class="support-options section">
+        <div class="container">
+            <h2 class="section-heading">How Can We Help?</h2>
+            <div class="support-grid">
+                <!-- Chat Support -->
+                <div class="support-card">
+                    <div class="support-icon">💬</div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team in real-time</p>
+                    <button class="btn-secondary">Start Chat</button>
+                </div>
+
+                <!-- Email Support -->
+                <div class="support-card">
+                    <div class="support-icon">📧</div>
+                    <h3>Email Support</h3>
+                    <p>Send us an email and we'll respond within 24 hours</p>
+                    <button class="btn-secondary">Send Email</button>
+                </div>
+
+                <!-- Help Center -->
+                <div class="support-card">
+                    <div class="support-icon">❓</div>
+                    <h3>Help Center</h3>
+                    <p>Browse our knowledge base for quick answers</p>
+                    <button class="btn-secondary">Visit Help Center</button>
+                </div>
+
+                <!-- Phone Support -->
+                <div class="support-card">
+                    <div class="support-icon">☎️</div>
+                    <h3>Phone Support</h3>
+                    <p>Call us directly for immediate assistance</p>
+                    <button class="btn-secondary">Call Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION (Optional) -->
+    <section class="map-section section">
+        <div class="container">
+            <h2 class="section-heading">Visit Our Office</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.5328806911536!2d72.84852932346954!3d19.0176110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9fef5f5f5f5%3A0x5f5f5f5f5f5f5f5f!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+            <p class="map-info">Located in the heart of Mumbai, we're easily accessible from all major areas. Visit us or send us a message!</p>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need Help Right Away?</h2>
+                <p>Our support team is available 24/7 to assist you with any queries or issues</p>
+                <a href="#contactForm" class="btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MealTrek</h3>
+                    <p>Your trusted food delivery partner. Fresh, fast, and delicious meals at your fingertips.</p>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="last-minute-deal.html">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MealTrek. All rights reserved. | Made with ❤️ by Aryan Damara</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/contact.js"></script>
+</body>
+</html>

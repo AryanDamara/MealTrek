@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MealTrek Last Minute Deals - Grab amazing discounts on food orders before they expire">
+    <title>Last Minute Deals - MealTrek | Flash Sales & Hot Offers</title>
+    <link rel="stylesheet" href="../assets/css/last-minute-deal.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <h1>🍽️ MealTrek</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="last-minute-deal.html" class="active">Last Minute Deals</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="navbar-auth">
+                <button class="btn-login">Login</button>
+                <button class="btn-signup">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="deals-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 class="hero-title">🔥 Last Minute Deals & Flash Sales</h1>
+            <p class="hero-subtitle">Grab unbelievable discounts before they run out! Limited time offers available now.</p>
+            <div class="hero-badge">
+                <span class="badge-text">⏰ Deals expire in hours</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FILTER SECTION -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <!-- Discount Filter -->
+                <div class="filter-group">
+                    <label for="discount-filter">Filter by Discount:</label>
+                    <select id="discount-filter" class="filter-select">
+                        <option value="">All Discounts</option>
+                        <option value="50+">50% Off & Above</option>
+                        <option value="40-50">40% - 50% Off</option>
+                        <option value="30-40">30% - 40% Off</option>
+                        <option value="below-30">Below 30% Off</option>
+                    </select>
+                </div>
+
+                <!-- Category Filter -->
+                <div class="filter-group">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter" class="filter-select">
+                        <option value="">All Categories</option>
+                        <option value="pizza">Pizza</option>
+                        <option value="burger">Burgers</option>
+                        <option value="biryani">Biryani</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="dessert">Desserts</option>
+                        <option value="beverages">Beverages</option>
+                    </select>
+                </div>
+
+                <!-- Sort Filter -->
+                <div class="filter-group">
+                    <label for="sort-filter">Sort by:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="expiring-soon">Expiring Soon</option>
+                        <option value="highest-discount">Highest Discount</option>
+                        <option value="lowest-price">Lowest Price</option>
+                        <option value="newest">Newest Deals</option>
+                    </select>
+                </div>
+
+                <!-- Search -->
+                <div class="filter-group search-group">
+                    <input 
+                        type="text" 
+                        id="search-deals" 
+                        class="filter-search" 
+                        placeholder="Search deals..."
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEALS SECTION -->
+    <section class="deals-section section">
+        <div class="container">
+            <!-- MEGA DEALS (High Discount) -->
+            <h2 class="deals-category-title">🌟 Mega Deals - 50% OFF & Above</h2>
+            <div class="deals-grid">
+                <!-- Deal Card 1 -->
+                <div class="deal-card mega-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">50% OFF</div>
+                        <div class="timer-badge" data-time="120">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">2h 0m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal1.jpg" alt="Combo Meal" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Spicy Combo Bundle</h3>
+                        <p class="deal-restaurant">Spice Paradise</p>
+                        <p class="deal-description">Includes: Biryani + 2 Rotis + Raita + Dessert</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹800</span>
+                            <span class="discounted-price">₹400</span>
+                            <span class="savings">Save ₹400</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 2 -->
+                <div class="deal-card mega-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">60% OFF</div>
+                        <div class="timer-badge" data-time="90">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">1h 30m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal2.jpg" alt="Pizza Deal" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Large Pizza Feast</h3>
+                        <p class="deal-restaurant">Pizza Hub</p>
+                        <p class="deal-description">Buy 1 Large Pizza + Get 1 Medium Free</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹1000</span>
+                            <span class="discounted-price">₹400</span>
+                            <span class="savings">Save ₹600</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 3 -->
+                <div class="deal-card mega-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">55% OFF</div>
+                        <div class="timer-badge" data-time="180">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">3h 0m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal3.jpg" alt="Burger Deal" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Burger Bonanza</h3>
+                        <p class="deal-restaurant">Burger King</p>
+                        <p class="deal-description">2 Burgers + Fries + Drinks for Two</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹600</span>
+                            <span class="discounted-price">₹270</span>
+                            <span class="savings">Save ₹330</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 4 -->
+                <div class="deal-card mega-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">50% OFF</div>
+                        <div class="timer-badge" data-time="240">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">4h 0m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal4.jpg" alt="Dessert Deal" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Dessert Paradise</h3>
+                        <p class="deal-restaurant">Sweet Treats</p>
+                        <p class="deal-description">Assorted Desserts Pack for 4 People</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹500</span>
+                            <span class="discounted-price">₹250</span>
+                            <span class="savings">Save ₹250</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOT DEALS (Medium Discount) -->
+            <h2 class="deals-category-title">🔥 Hot Deals - 30% to 50% OFF</h2>
+            <div class="deals-grid">
+                <!-- Deal Card 5 -->
+                <div class="deal-card hot-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">40% OFF</div>
+                        <div class="timer-badge" data-time="150">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">2h 30m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal5.jpg" alt="Chinese Food" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Chinese Delicacy</h3>
+                        <p class="deal-restaurant">Dragon's Wok</p>
+                        <p class="deal-description">Hakka Noodles + Fried Rice + Curry</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹450</span>
+                            <span class="discounted-price">₹270</span>
+                            <span class="savings">Save ₹180</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 6 -->
+                <div class="deal-card hot-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">35% OFF</div>
+                        <div class="timer-badge" data-time="210">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">3h 30m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal6.jpg" alt="South Indian" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">South Indian Feast</h3>
+                        <p class="deal-restaurant">Idly House</p>
+                        <p class="deal-description">4 Idly + 2 Dosa + Chutney & Sambar</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹320</span>
+                            <span class="discounted-price">₹208</span>
+                            <span class="savings">Save ₹112</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 7 -->
+                <div class="deal-card hot-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">45% OFF</div>
+                        <div class="timer-badge" data-time="120">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">2h 0m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal7.jpg" alt="Biryani" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Biryani Special Offer</h3>
+                        <p class="deal-restaurant">Biryani House</p>
+                        <p class="deal-description">Hyderabadi Biryani + Raita + Dessert</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹550</span>
+                            <span class="discounted-price">₹303</span>
+                            <span class="savings">Save ₹247</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 8 -->
+                <div class="deal-card hot-deal">
+                    <div class="deal-header">
+                        <div class="discount-badge">30% OFF</div>
+                        <div class="timer-badge" data-time="300">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">5h 0m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal8.jpg" alt="Beverages" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Beverages Bundle</h3>
+                        <p class="deal-restaurant">Café Express</p>
+                        <p class="deal-description">Coffee, Shakes & Smoothies Bundle</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹400</span>
+                            <span class="discounted-price">₹280</span>
+                            <span class="savings">Save ₹120</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENDING SOON (Low Discount but Limited Time) -->
+            <h2 class="deals-category-title">⏳ Ending Soon - Grab Before They're Gone!</h2>
+            <div class="deals-grid">
+                <!-- Deal Card 9 -->
+                <div class="deal-card ending-soon">
+                    <div class="deal-header">
+                        <div class="discount-badge">25% OFF</div>
+                        <div class="timer-badge timer-critical" data-time="30">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">30m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal9.jpg" alt="Fast Food" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Quick Bites Offer</h3>
+                        <p class="deal-restaurant">Fast Food Corner</p>
+                        <p class="deal-description">Samosa, Pakora & Tea Combo Pack</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹200</span>
+                            <span class="discounted-price">₹150</span>
+                            <span class="savings">Save ₹50</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 10 -->
+                <div class="deal-card ending-soon">
+                    <div class="deal-header">
+                        <div class="discount-badge">20% OFF</div>
+                        <div class="timer-badge timer-critical" data-time="45">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">45m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal10.jpg" alt="Snacks" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Snack Attack</h3>
+                        <p class="deal-restaurant">Snack Master</p>
+                        <p class="deal-description">Chips, Nuts & Namkeen Mix</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹300</span>
+                            <span class="discounted-price">₹240</span>
+                            <span class="savings">Save ₹60</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 11 -->
+                <div class="deal-card ending-soon">
+                    <div class="deal-header">
+                        <div class="discount-badge">15% OFF</div>
+                        <div class="timer-badge timer-critical" data-time="60">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">1h 0m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal11.jpg" alt="Breakfast" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Breakfast Special</h3>
+                        <p class="deal-restaurant">Morning Bites</p>
+                        <p class="deal-description">Pancakes, Eggs & Fresh Juice</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹350</span>
+                            <span class="discounted-price">₹298</span>
+                            <span class="savings">Save ₹52</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Deal Card 12 -->
+                <div class="deal-card ending-soon">
+                    <div class="deal-header">
+                        <div class="discount-badge">28% OFF</div>
+                        <div class="timer-badge timer-critical" data-time="50">
+                            <span class="timer-icon">⏰</span>
+                            <span class="timer-text">50m</span>
+                        </div>
+                    </div>
+                    <img src="../assets/images/deal12.jpg" alt="Seafood" class="deal-image">
+                    <div class="deal-details">
+                        <h3 class="deal-title">Seafood Extravaganza</h3>
+                        <p class="deal-restaurant">Ocean Taste</p>
+                        <p class="deal-description">Prawns Curry + Rice & Bread</p>
+                        <div class="deal-pricing">
+                            <span class="original-price">₹650</span>
+                            <span class="discounted-price">₹468</span>
+                            <span class="savings">Save ₹182</span>
+                        </div>
+                        <button class="btn-order">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS SECTION -->
+    <section class="how-it-works section">
+        <div class="container">
+            <h2 class="section-heading">How Our Last Minute Deals Work</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Browse Deals</h3>
+                    <p>Check out all available last minute deals with incredible discounts</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Check Timer</h3>
+                    <p>Note the expiration time - these deals are time-limited and change frequently</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Place Order</h3>
+                    <p>Click "Order Now" to add the deal to your cart before time runs out</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Enjoy Savings</h3>
+                    <p>Checkout with the incredible discount and enjoy your food quickly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE OUR DEALS SECTION -->
+    <section class="why-deals section">
+        <div class="container">
+            <h2 class="section-heading">Why Choose MealTrek Deals?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Amazing Savings</h3>
+                    <p>Save up to 60% on your favorite meals from top restaurants</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Fast & Fresh</h3>
+                    <p>Meals prepared fresh and delivered hot to your door within 30 minutes</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔔</div>
+                    <h3>Real-Time Updates</h3>
+                    <p>Get notified when new deals are added or about to expire</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✅</div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>All deals are from verified restaurants with excellent ratings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Don't Miss Out on Amazing Deals!</h2>
+                <p>Check back regularly for new deals. Deals change every hour.</p>
+                <button class="btn-primary">Refresh Deals</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MealTrek</h3>
+                    <p>Your trusted food delivery partner. Fresh, fast, and delicious meals at your fingertips.</p>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="last-minute-deal.html">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MealTrek. All rights reserved. | Made with ❤️ by Aryan Damara</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/last-minute-deal.js"></script>
+</body>
+</html>
