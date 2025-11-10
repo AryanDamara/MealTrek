@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign up for MealTrek - Create an account and start ordering delicious food">
+    <title>Sign Up - MealTrek | Create Your Account</title>
+    <link rel="stylesheet" href="../assets/css/signup.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <h1>🍽️ MealTrek</h1>
+            </div>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a href="last-minute-deal.html">Deals</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="navbar-auth">
+                <a href="login.html" class="btn-login">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SIGNUP SECTION -->
+    <section class="signup-section">
+        <div class="signup-container">
+            <!-- Left Side - Branding -->
+            <div class="signup-branding">
+                <div class="branding-content">
+                    <h1>Join MealTrek!</h1>
+                    <p>Start your food delivery journey with us and discover amazing restaurants</p>
+                    
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🚀</span>
+                            <p>Fast delivery</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💰</span>
+                            <p>Great deals</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⭐</span>
+                            <p>Best quality</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎉</span>
+                            <p>Rewards</p>
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>50K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <p>Restaurants</p>
+                        </div>
+                        <div class="stat">
+                            <h3>4.7★</h3>
+                            <p>Rating</p>
+                        </div>
+                    </div>
+
+                    <div class="branding-footer">
+                        <p>Already have an account? <a href="login.html" class="link">Sign in here</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Signup Form -->
+            <div class="signup-form-container">
+                <div class="form-content">
+                    <h2>Create Account</h2>
+                    <p class="form-subtitle">Fill in your details to get started</p>
+
+                    <!-- Signup Form -->
+                    <form class="signup-form" id="signupForm">
+                        <!-- Full Name Field -->
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="fullName" 
+                                name="fullName" 
+                                class="form-control" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-control" 
+                                placeholder="your.email@example.com"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <!-- Phone Number Field -->
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-control" 
+                                placeholder="+91 XXXXX XXXXX"
+                                required
+                            >
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <!-- Address Field -->
+                        <div class="form-group">
+                            <label for="address">Delivery Address</label>
+                            <input 
+                                type="text" 
+                                id="address" 
+                                name="address" 
+                                class="form-control" 
+                                placeholder="Enter your address"
+                                required
+                            >
+                            <span class="error-message" id="addressError"></span>
+                        </div>
+
+                        <!-- Password Field -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <div class="password-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="password" 
+                                    name="password" 
+                                    class="form-control" 
+                                    placeholder="Create a strong password"
+                                    required
+                                >
+                                <button type="button" class="toggle-password" id="togglePassword">
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                            <span class="error-message" id="passwordError"></span>
+                            <div class="password-strength">
+                                <div class="strength-bar"></div>
+                                <p class="strength-text">Password strength: <span id="strengthLevel">Weak</span></p>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Password Field -->
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <div class="password-wrapper">
+                                <input 
+                                    type="password" 
+                                    id="confirmPassword" 
+                                    name="confirmPassword" 
+                                    class="form-control" 
+                                    placeholder="Confirm your password"
+                                    required
+                                >
+                                <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                                    <span class="eye-icon">👁️</span>
+                                </button>
+                            </div>
+                            <span class="error-message" id="confirmPasswordError"></span>
+                        </div>
+
+                        <!-- Terms & Conditions -->
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="terms" id="terms" required>
+                                <span>I agree to the <a href="#" class="link">Terms & Conditions</a> and <a href="#" class="link">Privacy Policy</a></span>
+                            </label>
+                            <span class="error-message" id="termsError"></span>
+                        </div>
+
+                        <!-- Newsletter Subscription -->
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" id="newsletter" checked>
+                                <span>Send me exclusive deals and offers</span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn-signup-submit">Create Account</button>
+
+                        <!-- Error Message -->
+                        <div class="error-alert" id="signupError" style="display: none;"></div>
+
+                        <!-- Success Message -->
+                        <div class="success-alert" id="signupSuccess" style="display: none;"></div>
+                    </form>
+
+                    <!-- Divider -->
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+
+                    <!-- Social Signup -->
+                    <div class="social-signup">
+                        <button type="button" class="social-btn google-btn">
+                            <span class="social-icon">🔵</span>
+                            Sign up with Google
+                        </button>
+                        <button type="button" class="social-btn facebook-btn">
+                            <span class="social-icon">📘</span>
+                            Sign up with Facebook
+                        </button>
+                    </div>
+
+                    <!-- Login Link -->
+                    <div class="login-link">
+                        <p>Already have an account? <a href="login.html">Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MealTrek</h3>
+                    <p>Your trusted food delivery partner. Fresh, fast, and delicious meals at your fingertips.</p>
+                    <div class="social-links">
+                        <a href="#">📘 Facebook</a>
+                        <a href="#">📷 Instagram</a>
+                        <a href="#">🐦 Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="restaurants.html">Restaurants</a></li>
+                        <li><a href="last-minute-deal.html">Deals</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Become a Partner</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MealTrek. All rights reserved. | Made with ❤️ by Aryan Damara</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/signup.js"></script>
+</body>
+</html>
