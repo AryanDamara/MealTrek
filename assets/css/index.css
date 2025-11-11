@@ -114,6 +114,8 @@ body {
     color: var(--text-dark);
     border: 2px solid var(--text-dark);
     margin-right: var(--spacing-md);
+    text-decoration: none;
+    color: var(--text-dark);
 }
 
 .btn-login:hover {
