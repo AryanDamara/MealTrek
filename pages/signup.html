@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="../assets/css/signup.css">
 </head>
 <body>
-    <!-- NAVIGATION BAR -->
+    <!-- ========== NAVIGATION BAR ==========
+         Main navigation (top of every page)
+         Change only if you rearrange site structure.
+    -->
     <nav class="navbar">
         <div class="container">
             <div class="navbar-logo">
@@ -26,10 +29,17 @@
         </div>
     </nav>
 
-    <!-- SIGNUP SECTION -->
+    <!-- ========== SIGNUP SECTION ==========
+         Main page content divided in two:
+         LEFT: Branding and call-to-action (encourages registration)
+         RIGHT: Signup Form (field validation, account creation)
+         Place entire section after navigation.
+    -->
     <section class="signup-section">
         <div class="signup-container">
-            <!-- Left Side - Branding -->
+            <!-- LEFT: Branding/Trust Panel
+                 Visually engaging area with MealTrek's benefits, stats, and signup encouragement
+            -->
             <div class="signup-branding">
                 <div class="branding-content">
                     <h1>Join MealTrek!</h1>
@@ -75,7 +85,10 @@
                 </div>
             </div>
 
-            <!-- Right Side - Signup Form -->
+            <!-- RIGHT: Signup Form Panel 
+                 The actual registration form with all required fields
+                 Uses semantic groups for each input; field validation shown by spans
+            -->
             <div class="signup-form-container">
                 <div class="form-content">
                     <h2>Create Account</h2>
@@ -234,7 +247,10 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ========== FOOTER ==========
+         Global footer for all legal/company/support info and important links
+         Place as the last section on every page
+    -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -280,7 +296,10 @@
             </div>
         </div>
     </footer>
-
+    <!-- ========== SIGNUP PAGE SCRIPT ==========
+         JavaScript for signup form validation and interactivity (Phase 2+)
+         Include/scripts go at the end of <body>
+    -->
     <script src="../assets/js/signup.js"></script>
 </body>
 </html>
