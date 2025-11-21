@@ -1,4 +1,3 @@
-Great! Here’s the full content you can paste directly into your `README.md` file in VS Code:
 
 ***
 
